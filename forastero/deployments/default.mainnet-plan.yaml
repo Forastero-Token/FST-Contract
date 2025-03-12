@@ -1,0 +1,53 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://stacks-node-api.mainnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: extension-trait
+            expected-sender: SP3M0DJ8CVFTX1EK775SR29DNC4YM541JMMVYNV47
+            cost: 114
+            path: contracts/extension-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: proposal-trait
+            expected-sender: SP3M0DJ8CVFTX1EK775SR29DNC4YM541JMMVYNV47
+            cost: 101
+            path: contracts/proposal-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: core
+            expected-sender: SP3M0DJ8CVFTX1EK775SR29DNC4YM541JMMVYNV47
+            cost: 2485
+            path: contracts/core.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: forastero-token
+            expected-sender: SP3M0DJ8CVFTX1EK775SR29DNC4YM541JMMVYNV47
+            cost: 1273
+            path: contracts/forastero-token.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: ownable-trait
+            expected-sender: SP3M0DJ8CVFTX1EK775SR29DNC4YM541JMMVYNV47
+            cost: 162
+            path: contracts/ownable-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: sip010-ft-trait
+            expected-sender: SP3M0DJ8CVFTX1EK775SR29DNC4YM541JMMVYNV47
+            cost: 832
+            path: contracts/sip010-ft-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.0"
