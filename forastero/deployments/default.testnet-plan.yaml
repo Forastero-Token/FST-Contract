@@ -1,0 +1,53 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://stacks-node-api.testnet.stacks.co"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: extension-trait
+            expected-sender: STZ7TKFAM2X2DK8770S62FF16XH43RDFTY60R1Y1
+            cost: 114
+            path: contracts/extension-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: proposal-trait
+            expected-sender: STZ7TKFAM2X2DK8770S62FF16XH43RDFTY60R1Y1
+            cost: 101
+            path: contracts/proposal-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: core
+            expected-sender: STZ7TKFAM2X2DK8770S62FF16XH43RDFTY60R1Y1
+            cost: 2485
+            path: contracts/core.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: forastero-token
+            expected-sender: STZ7TKFAM2X2DK8770S62FF16XH43RDFTY60R1Y1
+            cost: 1273
+            path: contracts/forastero-token.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: ownable-trait
+            expected-sender: STZ7TKFAM2X2DK8770S62FF16XH43RDFTY60R1Y1
+            cost: 162
+            path: contracts/ownable-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: sip010-ft-trait
+            expected-sender: STZ7TKFAM2X2DK8770S62FF16XH43RDFTY60R1Y1
+            cost: 832
+            path: contracts/sip010-ft-trait.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.0"
