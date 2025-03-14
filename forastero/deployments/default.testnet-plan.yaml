@@ -10,42 +10,42 @@ plan:
       transactions:
         - contract-publish:
             contract-name: extension-trait
-            expected-sender: ST1SKTA5V3DJWDMYR9106W5ZJBBW8ADXA2NE18Y52
+            expected-sender: STWQSN7Y7WP5F1235SKQJWVTA0PTV4BPEV2KX2MT
             cost: 114
             path: contracts/extension-trait.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: proposal-trait
-            expected-sender: ST1SKTA5V3DJWDMYR9106W5ZJBBW8ADXA2NE18Y52
+            expected-sender: STWQSN7Y7WP5F1235SKQJWVTA0PTV4BPEV2KX2MT
             cost: 101
             path: contracts/proposal-trait.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: core
-            expected-sender: ST1SKTA5V3DJWDMYR9106W5ZJBBW8ADXA2NE18Y52
-            cost: 2485
+            expected-sender: STWQSN7Y7WP5F1235SKQJWVTA0PTV4BPEV2KX2MT
+            cost: 2493
             path: contracts/core.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: forastero-token
-            expected-sender: ST1SKTA5V3DJWDMYR9106W5ZJBBW8ADXA2NE18Y52
+            expected-sender: STWQSN7Y7WP5F1235SKQJWVTA0PTV4BPEV2KX2MT
             cost: 1273
             path: contracts/forastero-token.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: ownable-trait
-            expected-sender: ST1SKTA5V3DJWDMYR9106W5ZJBBW8ADXA2NE18Y52
+            expected-sender: STWQSN7Y7WP5F1235SKQJWVTA0PTV4BPEV2KX2MT
             cost: 162
             path: contracts/ownable-trait.clar
             anchor-block-only: true
             clarity-version: 3
         - contract-publish:
             contract-name: sip010-ft-trait
-            expected-sender: ST1SKTA5V3DJWDMYR9106W5ZJBBW8ADXA2NE18Y52
+            expected-sender: STWQSN7Y7WP5F1235SKQJWVTA0PTV4BPEV2KX2MT
             cost: 832
             path: contracts/sip010-ft-trait.clar
             anchor-block-only: true
